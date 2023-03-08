@@ -4,105 +4,59 @@
     ViewData["Title"] = "Home page";
 }
 
-<section class="pt-7 pb-5 landing-bg text-white overflow-hidden" style="background: #1a1a27 !important;">
-	<div class="container py-4">
-		<div class="row">
-			<div class="col-xl-11 mx-auto">
-				<div class="row">
-					<div class="col-md-12 col-xl-8 text-center mx-auto">
-						<div class="d-block my-4">
-							<h1 class="display-4 fw-bold mb-3 text-white">Modern, Flexible and Responsive Bootstrap 5 Admin Template</h1>
 
+<section class="py-6" style="background-image: url('/img/bg-3.jpg'); background-size:cover; background-position-x:0; background-position-y:top;background-repeat:no-repeat">
+	<div class="container">
+		<div class="row pb-3">
+			<div class="col-lg-6">
+				<div class="form-body">
+					<div class="row">
+						<div class="form-holder">
+							<div class="form-content">
+								<div class="form-items">
+									<h3>Sign In To Portal</h3>
+									<p>Enter your details to login to your account</p>
+
+									<form class="requires-validation" novalidate>
+
+										
+										<div class="col-md-12 mb-4">
+											<input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+											<div class="valid-feedback">Email field is valid!</div>
+											<div class="invalid-feedback">Email field cannot be blank!</div>
+										</div>
+
+										<div class="col-md-12 mb-4">
+											<input class="form-control" type="password" name="password" placeholder="Password" required>
+											<div class="valid-feedback">Password field is valid!</div>
+											<div class="invalid-feedback">Password field cannot be blank!</div>
+										</div>
+
+
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+											<label class="form-check-label">I confirm that all data are correct</label>
+											<div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+										</div>
+
+
+										<div class="form-button mt-3">
+											<button id="submit" type="submit" class="btn btn-primary">Register</button>
+										</div>
+									</form>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
+			<div class="col-lg-6">
 
-<section class="marquee p-2">
-	<marquee class="mt-2">
-		<span class="mr-5"><strong>New Feature Alert: All Students Who have paid their acceptance fees can now re-print their receipt on their dashboard | Students from 2020/2021, 2021/2022 &amp; 2022/2023 Academic Session are to pay their Acceptance fees, School fees here. While for Departmental &amp; Faculty Charges, all students pay&#xA0;here&#xA0;as&#xA0;well...  </strong></span>
-		<span class="mr-5"><strong></strong></span>
-	</marquee>
-</section>
-
-<div class="py-3 bg-white landing-nav">
-	<div class="container text-center">
-		<div class="btn-group">
-			<button type="button" class="btn btn-lg btn-pill btn-dark my-2 ms-2 dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false">
-				Admissions &nbsp;
-			</button>
-			<div class="dropdown-menu">
-				<a class="dropdown-item" href="#">Action</a>
-				<a class="dropdown-item" href="#">Another action</a>
-				<a class="dropdown-item" href="#">Something else here</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#">Separated link</a>
-			</div>
-		</div>
-		<a target="_blank" href="mailto:support@bootlab.io" class="btn btn-lg btn-pill btn-link text-dark">Reprint Acceptance Receipt</a>
-	</div>
-</div>
-
-
-<section class="py-6">
-	<div class="container">
-		<div class="row pb-3">
-			<div class="col-md-6">
-				<div class="mb-4 text-center">
-					<form class="auth-form">
-
-						<h2>Sign In To Portal</h2>
-						<p class="text-muted">Enter your details to login to your account</p>
-
-						<div class="form-group">
-							<div class="form-label-group">
-								<input type="text" id="inputUser" class="form-control placeholder-shown" placeholder="Username" autofocus=""> <label for="inputUser">Username</label>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="form-label-group">
-								<input type="password" id="inputPassword" class="form-control placeholder-shown" placeholder="Password"> <label for="inputPassword">Password</label>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
-						</div>
-
-						<div class="form-group text-center">
-							<div class="custom-control custom-control-inline custom-checkbox">
-								<input type="checkbox" class="custom-control-input" id="remember-me"> <label class="custom-control-label" for="remember-me">Keep me sign in</label>
-							</div>
-						</div>
-
-						<div class="text-center pt-3">
-							<a href="auth-recovery-username.html" class="link">Forgot Username?</a> <span class="mx-2">·</span> <a href="auth-recovery-password.html" class="link">Forgot Password?</a>
-						</div>
-
-					</form>
-
+				<div class="notice notice-info">
+					<strong>Important Notice:</strong> Ensure that you have obtained five O’ level credits (SSCE/NECO/NABTEB) in the relevant subjects for your programme of study including English Language and Mathematics in not more than two sittings
 				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
-<section class="py-6 bg-white d-none">
-	<div class="container">
-
-		<div class="mb-4 text-center">
-			<h2>Testimonials</h2>
-			<p class="text-muted">Here's what some of our 3,000 customers have to say about working with our products.</p>
-		</div>
-
-		<div class="row">
-			<div class="col-md-6 col-lg-4">
-				<blockquote class="card border">
+				<div class="card border">
 					<div class="card-body p-4">
 						<div class="d-flex align-items-center mb-3">
 							<div>
@@ -113,143 +67,16 @@
 							</div>
 						</div>
 						<p class="lead mb-2">
-							“We are totally amazed with a simplicity and the design of the template. Probably saved us hundreds of hours of
-							development. We are absolutely amazed with the support Bootlab has provided us.”
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
 						</p>
 
-						<div class="landing-stars">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
 					</div>
-				</blockquote>
-				<blockquote class="card border">
-					<div class="card-body p-4">
-						<div class="d-flex align-items-center mb-3">
-							<div>
-								<img src="img/brands/b.svg" width="48" height="48" alt="Bootstrap" />
-							</div>
-							<div class="ps-3">
-								<h5 class="mb-1 mt-2">Jason</h5><small class="d-block text-muted h5 fw-normal">Bootstrap Themes</small>
-							</div>
-						</div>
-						<p class="lead mb-2">
-							“As a DB guy, this template has made my life easy porting over an old website to a new responsive version. I
-							can focus more on the data and less on the layout.”
-						</p>
-
-						<div class="landing-stars">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</blockquote>
-			</div>
-			<div class="col-md-6 col-lg-4">
-				<blockquote class="card border">
-					<div class="card-body p-4">
-						<div class="d-flex align-items-center mb-3">
-							<div>
-								<img src="img/brands/b.svg" width="48" height="48" alt="Bootstrap" />
-							</div>
-							<div class="ps-3">
-								<h5 class="mb-1 mt-2">Alejandro</h5><small class="d-block text-muted h5 fw-normal">Bootstrap Themes</small>
-							</div>
-						</div>
-						<p class="lead mb-2">
-							“Everything is so properly set up that any new additions I'd make would feel like a native extension of the
-							theme versus a simple hack. I definitely feel like this will save me hundredths of hours I'd otherwise spend on designing.”
-						</p>
-
-						<div class="landing-stars">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</blockquote>
-				<blockquote class="card border">
-					<div class="card-body p-4">
-						<div class="d-flex align-items-center mb-3">
-							<div>
-								<img src="img/brands/b.svg" width="48" height="48" alt="Bootstrap" />
-							</div>
-							<div class="ps-3">
-								<h5 class="mb-1 mt-2">Richard</h5><small class="d-block text-muted h5 fw-normal">Bootstrap Themes</small>
-							</div>
-						</div>
-						<p class="lead mb-2">
-							“This template was just what we were after; its modern, works perfectly and is visually beautiful , we couldn't
-							be happier. The support really is excellent, I look forward to working with these guys for a long time to come!”
-						</p>
-
-						<div class="landing-stars">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</blockquote>
-			</div>
-			<div class="col-md-6 col-lg-4 d-block d-md-none d-lg-block">
-				<blockquote class="card border">
-					<div class="card-body p-4">
-						<div class="d-flex align-items-center mb-3">
-							<div>
-								<img src="img/brands/b.svg" width="48" height="48" alt="Bootstrap" />
-							</div>
-							<div class="ps-3">
-								<h5 class="mb-1 mt-2">Jordi</h5><small class="d-block text-muted h5 fw-normal">Bootstrap Themes</small>
-							</div>
-						</div>
-						<p class="lead mb-2">
-							“I ran into a problem and contacted support. Within 24 hours, I not only received a response but even an
-							updated version that solved my problem and works like a charm. Fantastic customer service!”
-						</p>
-
-						<div class="landing-stars">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</blockquote>
-				<blockquote class="card border">
-					<div class="card-body p-4">
-						<div class="d-flex align-items-center mb-3">
-							<div>
-								<img src="img/brands/b.svg" width="48" height="48" alt="Bootstrap" />
-							</div>
-							<div class="ps-3">
-								<h5 class="mb-1 mt-2">Martin</h5><small class="d-block text-muted h5 fw-normal">Bootstrap Themes</small>
-							</div>
-						</div>
-						<p class="lead mb-2">
-							“I just began to test and use this theme and I can find that it cover my expectatives. Good support from the
-							developer.”
-						</p>
-
-						<div class="landing-stars">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-						</div>
-					</div>
-				</blockquote>
+				</div>
+				
 			</div>
 		</div>
 	</div>
