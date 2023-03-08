@@ -33,6 +33,61 @@
 		</div>
 	</nav>
 
+	<section class="pt-7 pb-5 landing-bg text-white overflow-hidden" style="background: #1a1a27 !important;">
+		<div class="container py-4">
+			<div class="row">
+				<div class="col-xl-11 mx-auto">
+					<div class="row">
+						<div class="col-md-12 col-xl-8 text-center mx-auto">
+							<div class="d-block my-4">
+								<h1 class="display-4 fw-bold mb-3 text-white">Modern, Flexible and Responsive Bootstrap 5 Admin Template</h1>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="marquee p-2">
+		<marquee class="mt-2">
+			<span class="mr-5"><strong>New Feature Alert: All Students Who have paid their acceptance fees can now re-print their receipt on their dashboard | Students from 2020/2021, 2021/2022 &amp; 2022/2023 Academic Session are to pay their Acceptance fees, School fees here. While for Departmental &amp; Faculty Charges, all students pay&#xA0;here&#xA0;as&#xA0;well...  </strong></span>
+			<span class="mr-5"><strong></strong></span>
+		</marquee>
+	</section>
+
+	<div class="py-3 bg-white landing-nav" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;">
+		<div class="container text-center">
+			<div class="btn-group">
+				<button type="button" class="btn btn-lg btn-pill btn-outline-dark my-2 ms-2 dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">
+					Admissions &nbsp;
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Check Admission Status</a>
+
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Buy Admission Checker PIN </a>
+				</div>
+			</div>
+			
+			<div class="btn-group">
+				<button type="button" class="btn btn-lg btn-pill btn-outline-dark my-2 ms-2 dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">
+					Reprint Receipts &nbsp;
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Acceptance Fee Receipt</a>
+					
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Buy Admission Checker PIN Receipt </a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	@RenderBody()
 
 	<svg width="0" height="0" style="position:absolute">
@@ -48,13 +103,12 @@
 		<div class="row">
 			<div class="col-12 d-flex justify-content-center">
 				<footer class="auth-footer">
-					© @DateTime.Now.Year.ToString() Kindex Micronet.&nbsp;&nbsp; UNICAL Contact Line - 08039008259
+					© @($"{DateTime.Now.AddYears(-1).Year.ToString()} / {DateTime.Now.Year.ToString()}") Kindex Micronet.&nbsp;&nbsp; UNICAL Contact Line - 08039008259
 				</footer>
 			</div>
 		</div>
 	</div>
 	
-
 	<script src="js/app.js"></script>
 
 </body>
