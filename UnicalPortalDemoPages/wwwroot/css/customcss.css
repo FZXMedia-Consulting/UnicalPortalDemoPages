@@ -1,0 +1,49 @@
+﻿section.marquee {
+    color: white;
+    background-color: red;
+    font-size: 1rem;
+}
+
+.btn-brown {
+    background-color: #8C0404;
+    border-color: #8C0404;
+    color: #ffffff !important;
+}
+
+.auth-footer {
+    padding: 1rem;
+    color: #888c9b;
+}
+
+.auth-form {
+    position: relative;
+    padding: 2rem 1.25rem 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.form-label-group input.placeholder-shown:not(:-webkit-autofill) {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.form-label-group > input, .form-label-group > label {
+    padding: 0 .75rem;
+}
+
+.form-control {
+    box-shadow: inset 0 1px 0 0 rgb(34 34 48 / 5%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    .auth-form {
+        padding: 3rem 2rem 1rem;
+        max-width: 420px;
+        border-radius: .25rem;
+        background-color: #fff;
+        box-shadow: 0 0 0 1px rgb(20 20 31 / 5%), 0 1px 3px 0 rgb(20 20 31 / 15%);
+    }
+} 
+
