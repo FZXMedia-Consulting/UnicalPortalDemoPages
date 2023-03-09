@@ -66,6 +66,7 @@
         justify-content: center;
         -webkit-align-items: center;
         align-items: center;
+        width: 100%;
     }
 
 .form-content .form-items {
@@ -73,7 +74,6 @@
     padding: 40px;
     display: inline-block;
     width: 100%;
-    min-width: 540px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -168,3 +168,11 @@
     .notice-danger > strong {
         color: #d73814;
     }
+
+.notice-brown {
+    border-color: rgba(180,5,5,1);
+}
+
+.notice-brown > strong {
+    color: rgba(180,5,5,1);
+}
