@@ -14,7 +14,7 @@
     <meta name="keywords" content="Good, bootstrap, bootstrap 5, admin themes, Asp.Net Core &amp; Django starter kits, admin themes, bootstrap admin, bootstrap dashboard, bootstrap dark mode" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="shortcut icon" href="../../assets/media/logos/favicon.ico" />
+    <link rel="shortcut icon" href="https://portal.unical.edu.ng/assets/media/logos/logo53.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -35,38 +35,14 @@
             font-size: 13px !important;
             font-weight: 400;
             overflow: visible;
+            background-color: #fff;
             font-family: Inter, Helvetica, "sans-serif";
-        }
-
-        .app-blank {
-            background-color: #fff
-        }
-
-        .flex-root {
-            flex: 1;
-        }
-
-        .flex-column-fluid {
-            flex: 1 0 auto;
         }
 
         .p-10 {
             padding: 2.5rem !important;
         }
-
-        .flex-column {
-            flex-direction: column !important;
-        }
-
-        .flex-row-fluid {
-            flex: 1 auto;
-            min-width: 0;
-        }
-
-        .flex-column-fluid {
-            flex: 1 0 auto;
-        }
-
+     
         .py-20 {
             padding-top: 5rem !important;
             padding-bottom: 5rem !important;
@@ -77,7 +53,7 @@
         }
 
         .text-gray-800 {
-            color: var(--kt-text-gray-800) !important;
+            color: #403d38 !important;
         }
 
         .fw-bold {
@@ -152,8 +128,7 @@
     </style>
 </head>
 
-<body class="auth-bg overflow-visible app-blank">
-
+<body>
     <div class="d-flex justify-content-center align-content-center p-10 py-20">
         <div class="overflow-visible">
             <div class="card border-3 overflow-visible" style="padding: 2rem">
@@ -170,7 +145,6 @@
                         <img class="watermark" src="~/img/logo-letter-13.png" />
                     </div>
                 </div>
-
 
                 <div class="card-body">
                     <div class="d-block">
@@ -209,8 +183,6 @@
                         <h5>[University Authority's Name]</h5>
                         <h5>[University Authority's Position]</h5>
                     </div>
-
-
                 </div>
                 <div class="card-footer position-relative">
                     <div class="fs-5">
@@ -218,51 +190,12 @@
                         <a href="../layouts/default/sign-up.html" class="link-primary fw-bold">Resend</a>
                     </div>
                 </div>
-
             </div>
         </div>
 
 
     </div>
 
-
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <link href="css/gc.spread.sheets.excel2013white.12.2.0.css" rel="stylesheet" />
-    <script src="scripts/gc.spread.sheets.all.12.2.0.min.js"></script>
-    <script src="scripts/gc.spread.sheets.print.12.2.0.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            // Initializing Spread
-            var spread = new GC.Spread.Sheets.Workbook(document.getElementById('ss'), { sheetCount: 1 });
-            spread.suspendPaint();
-
-            // Fetch ActiveSheet
-            activeSheet = spread.getSheet(0);
-
-            // Set Sheet's RowCount/ ColCount
-            activeSheet.setRowCount(200);
-            activeSheet.setColumnCount(8);
-            // Set value
-            for (var r = 0, rc = activeSheet.getRowCount(); r < rc; r++) {
-                for (var c = 0, cc = activeSheet.getColumnCount(); c < cc; c++) {
-                    activeSheet.setValue(r, c, r + c);
-                }
-            }
-            spread.resumePaint();
-            var printInfo = activeSheet.printInfo();
-
-            // For printing watermark on all pages
-            var watermark1 = { x: 0, y: 0, width: 80, height: 80, imageSrc: "../image/gc1.png", page: "all" };
-
-            // For printing watermark on selected pages
-            var watermark2 = { x: 650, y: 1000, width: 100, height: 80, imageSrc: "../image/gc2.png", page: "0,1,3" };
-            printInfo.watermark([watermark1, watermark2]);
-            $("#print").click(function () {
-                spread.print();
-            });
-        });
-    </script>
 </body>
 
 </html>
