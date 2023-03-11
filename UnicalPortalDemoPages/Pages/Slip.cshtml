@@ -68,11 +68,11 @@
             font-size: 1.15rem;
         }
 
-        @@media (min-width: 1200px) {
+       /* @@media (min-width: 1200px) {
             .fs-2qx {
                 font-size: 2.25rem !important;
             }
-        }
+        }*/
 
         .fw-semibold {
             font-weight: 500 !important;
@@ -81,13 +81,13 @@
         .fs-3 {
             font-size: calc(1.26rem + 0.12vw) !important;
         }
-
+/*
         @@media (min-width: 1200px) {
             .fs-3 {
                 font-size: 1.15rem !important;
             }
         }
-
+*/
         .mb-15 {
             margin-bottom: 3.75rem !important;
         }
@@ -97,14 +97,16 @@
         }
 
         .watermark {
-            -webkit-transform: rotate(331deg);
+           /* -webkit-transform: rotate(331deg);
             -moz-transform: rotate(331deg);
             -o-transform: rotate(331deg);
-            transform: rotate(331deg);
+            transform: rotate(331deg);*/
             position: absolute;
-            /*padding-left: 10%;*/
+            padding-left: 10%;
             opacity: 0.1;
             height: 12rem;
+            width:100%;
+            height:12rem;
             bottom: 0;
             z-index: 1;
             margin: 0;
@@ -112,16 +114,16 @@
 
         .card-watermark::after {
             content: "";
-            background: url(img/logo-letter-13.png);
+            background: url(img/logo53.png);
             opacity: 0.1;
             top: 0;
             left: 0;
-            transform: rotate(331deg);
+            /*transform: rotate(331deg);*/
             background-repeat: no-repeat;
             background-position: center;
             bottom: 0;
             right: 0;
-            scale: 1.8;
+            scale: 9;
             position: absolute;
             z-index: 1;
         }
@@ -131,27 +133,30 @@
 <body>
     <div class="d-flex justify-content-center align-content-center p-10 py-20">
         <div class="overflow-visible">
-            <div class="card border-3 overflow-visible" style="padding: 2rem">
+            <div class="card border-3 overflow-visible card-watermark" style="padding: 2rem">
 
                 <div class="card-header position-relative text-center bg-transparent border-0">
                     <a href="../../index.html" class="pt-20 mb-12">
-                        <img alt="Logo" src="~/img/logo53.png" class="h-40px" />
+                        <img alt="Logo" src="~/img/logo53.png" style="width:6%" class="h-90px" />
                     </a>
 
                     <h1 class="fw-bold fs-2qx text-gray-800 mb-7">University of Calabar</h1>
+                    <h5>University of Calabar, Etagbor, PMB 1115 Calabar</h5>
+                    <h6>
+                        Email: enquiries@unical.edu.ng &nbsp;&nbsp; Tel: (+234) 812-630-5234, 817-846-5080
+                    </h6>
                     <h2 class="fw-bold fs-1qx text-gray-800 mb-7">Admission Slip</h2>
 
-                    <div class="position-relative d-flex justify-content-center text-center">
-                        <img class="watermark" src="~/img/logo-letter-13.png" />
-                    </div>
+                  @*  <div class="position-relative d-flex justify-content-center text-center">
+                        <img class="watermark" src="~/img/logo.jpg" />
+                    </div>*@
                 </div>
 
                 <div class="card-body">
                     <div class="d-block">
                         <h5><strong class="mr-2 text-muted">Name:</strong> [Student's Name]</h5>
                         <h5><strong class="mr-2 text-muted">Reg No:</strong> [Student ID Number]</h5>
-                        <h5><strong class="mr-2 text-muted">Program:</strong> [Program of Study]</h5>
-                        <h5><strong class="mr-2 text-muted">Date:</strong> @DateTime.Now.ToString("dd, MMM yyyy")</h5>
+                        <h5><strong class="mr-2 text-muted">Program:</strong> [Program of Study] <span class="float-right"><strong class="mr-2 text-muted">Date:</strong> @DateTime.Now.ToString("dd, MMMM yyyy")</span></h5>
                     </div>
 
                     <h5 class="mt-5">Dear [Student's Name],</h5>
@@ -162,9 +167,9 @@
 
                         <p class="mt-3">Please take note of the following important details:</p>
 
-                        <div class="position-relative d-flex justify-content-center text-center">
-                            <img class="watermark" src="~/img/logo-letter-13.png" />
-                        </div>
+                       @* <div class="position-relative d-flex justify-content-center text-center">
+                            <img class="watermark" src="~/img/logo53.png" />
+                        </div>*@
                         <ul>
                             <li>Orientation: An orientation program will be conducted on [Orientation Date and Time]. Attendance is mandatory for all new students.</li>
                             <li>Course Registration: Course registration will begin on [Course Registration Date]. Please consult with your academic advisor for assistance in selecting your courses.</li>
@@ -177,9 +182,9 @@
                     </div>
 
                     <div class="d-block">
-                        <div class="position-relative d-flex justify-content-center text-center">
+                        @*<div class="position-relative d-flex justify-content-center text-center">
                             <img class="watermark" src="~/img/logo-letter-13.png" />
-                        </div>
+                        </div>*@
                         <h5>[University Authority's Name]</h5>
                         <h5>[University Authority's Position]</h5>
                     </div>
