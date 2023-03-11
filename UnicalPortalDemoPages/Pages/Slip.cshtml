@@ -97,17 +97,11 @@
         }
 
         .watermark {
-           /* -webkit-transform: rotate(331deg);
-            -moz-transform: rotate(331deg);
-            -o-transform: rotate(331deg);
-            transform: rotate(331deg);*/
             position: absolute;
-            padding-left: 10%;
             opacity: 0.1;
-            height: 12rem;
             width:100%;
-            height:12rem;
             bottom: 0;
+            top: 0;
             z-index: 1;
             margin: 0;
         }
@@ -133,11 +127,15 @@
 <body>
     <div class="d-flex justify-content-center align-content-center p-10 py-20">
         <div class="overflow-visible">
-            <div class="card border-3 overflow-visible card-watermark" style="padding: 2rem">
+            <div class="card border-3 overflow-visible" style="padding: 2rem">
+
+                <div class="position-relative d-flex justify-content-center text-center">
+                    <img class="watermark" src="~/img/logo.jpg" />
+                </div>
 
                 <div class="card-header position-relative text-center bg-transparent border-0">
                     <a href="../../index.html" class="pt-20 mb-12">
-                        <img alt="Logo" src="~/img/logo53.png" style="width:6%" class="h-90px" />
+                        <img alt="Logo" src="~/img/logo.jpg" style="width:10%" class="h-90px" />
                     </a>
 
                     <h1 class="fw-bold fs-2qx text-gray-800 mb-7">University of Calabar</h1>
@@ -147,9 +145,7 @@
                     </h6>
                     <h2 class="fw-bold fs-1qx text-gray-800 mb-7">Admission Slip</h2>
 
-                  @*  <div class="position-relative d-flex justify-content-center text-center">
-                        <img class="watermark" src="~/img/logo.jpg" />
-                    </div>*@
+                  @*  *@
                 </div>
 
                 <div class="card-body">
